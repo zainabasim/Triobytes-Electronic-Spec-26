@@ -12,7 +12,7 @@ Hardware frame synchronizer for CCSDS telemetry: it locks onto the 32-bit attach
 | 1 | Python model: correlation and threshold detection over simulated AWGN bit errors | Done |
 | 2 | Verilog correlator, lock FSM, frame extractor, testbench with bit slips | Done |
 | 3 | Quartus synthesis and timing for Cyclone V, target 50 MHz | Done |
-| 3 | Virtual channel (VCID) frame extraction | Not implemented |
+| 3 | Virtual channel (VCID) frame extraction | Done |
 
 ## How it works
 
@@ -90,9 +90,9 @@ A higher threshold detects markers in noise but allows more false alarms, which 
 | Item | Value |
 |---|---|
 | Clock constraint | 20 ns (50 MHz) |
-| Fmax (slow 1100 mV 85 C) | 120.48 MHz |
-| Setup slack (85 C / 0 C) | 11.70 ns / 11.391 ns |
-| Hold slack (85 C) | 0.507 ns |
+| Fmax (slow 1100 mV 85 C) | 122.67 MHz |
+| Setup slack (85 C / 0 C) | 11.848 ns / 11.402 ns |
+| Hold slack (85 C) | 0.461 ns |
 | Logic utilization | 58 / 56,480 ALMs (under 1%) |
 | Registers, pins | 84, 20 of 268 |
 | Memory, DSP, PLL | 0 |
